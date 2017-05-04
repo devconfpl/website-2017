@@ -392,6 +392,8 @@ Ventcamp = {
         });
     },
 
+    /*
+
     formInit: function () {
         var _this = this;
 
@@ -504,70 +506,72 @@ Ventcamp = {
             else alert('An error occured. Please try again later.');
         }
 
-        if ( $('form').not('.mailchimp-form').not('.disable-ajax-form').length ) {
-            $('form').not('.mailchimp-form').not('.disable-ajax-form').each(function() {
-                if ( typeof $.fn.validate == 'function' ) {
-                    $(this).validate(validateOptions);
-                }else {
-                    $(this).on('submit', submitHandler);
+        // if ( $('form').not('.mailchimp-form').not('.disable-ajax-form').length ) {
+        //     $('form').not('.mailchimp-form').not('.disable-ajax-form').each(function() {
+        //         if ( typeof $.fn.validate == 'function' ) {
+        //             $(this).validate(validateOptions);
+        //         }else {
+        //             // $(this).on('submit', submitHandler);
+        //
+        //             _this.log( 'Can\'t find jQuery.validate function.' );
+        //         }
+        //     });
+        // }
 
-                    _this.log( 'Can\'t find jQuery.validate function.' );
-                }
-            });
-        }
-
-        if ( $('.mailchimp-form').length ) {
-            $('.mailchimp-form').each(function() {
-                $(this).on('submit', function(event) {
-                    event.preventDefault();
-
-                    var $form = $(this),
-                        $input = $form.find('input[type="submit"]'),
-                        $button = $form.find('button[type="submit"]'),
-                        $fullnameField = '',
-                        $emailField = $form.find('[name=NewsletterEmail]'),
-                        $responseBlock = $form.find('.response'),
-                        email = $emailField.val(),
-                        first_name = '',
-                        last_name = '';
-
-                    if ($(this).find('[name=NewsletterName]') .length > 0){
-                        $fullnameField = $form.find('[name=NewsletterName]');
-                        fullname = $fullnameField.val().split(' '), // Gwt Full name and split it by space
-                        first_name = fullname[0], // First part is the first name
-                        last_name = fullname[1]; // Second part is Last name
-                        if ( !last_name ) last_name = ''; //By chance they can input only their first name, then we should null the last name since there is none
-                    } else {
-                        first_name = '',
-                        last_name = '';
-                    }
-
-                    if ( $button.length ) {
-                        $button.append('<span class="loading fa fa-refresh"></span>');
-
-                    }else if ( $input ) {
-                        $input.after('<span class="loading fa fa-refresh"></span>');
-
-                    }
-
-                    $.ajax({
-                        url: 'process-form-mailchimp.php',
-                        data: 'ajax=true&email=' + escape(email) + '&fname=' + first_name +'&lname=' + last_name,
-
-                        success: function(msg) {
-                            $form.find('.loading').remove();
-
-                            if ( msg.indexOf('Success') !=-1 ) {
-                                $responseBlock.html('<span class="success-message">Success! You are now subscribed to our newsletter!</span>');
-                            } else {
-                                $responseBlock.html('<span class="error-message">' + msg + '</span>');
-                            }
-                        }
-                    });
-                });
-            });
-        }
+        // if ( $('.mailchimp-form').length ) {
+        //     $('.mailchimp-form').each(function() {
+        //         $(this).on('submit', function(event) {
+        //             event.preventDefault();
+        //
+        //             var $form = $(this),
+        //                 $input = $form.find('input[type="submit"]'),
+        //                 $button = $form.find('button[type="submit"]'),
+        //                 $fullnameField = '',
+        //                 $emailField = $form.find('[name=NewsletterEmail]'),
+        //                 $responseBlock = $form.find('.response'),
+        //                 email = $emailField.val(),
+        //                 first_name = '',
+        //                 last_name = '';
+        //
+        //             if ($(this).find('[name=NewsletterName]') .length > 0){
+        //                 $fullnameField = $form.find('[name=NewsletterName]');
+        //                 fullname = $fullnameField.val().split(' '), // Gwt Full name and split it by space
+        //                 first_name = fullname[0], // First part is the first name
+        //                 last_name = fullname[1]; // Second part is Last name
+        //                 if ( !last_name ) last_name = ''; //By chance they can input only their first name, then we should null the last name since there is none
+        //             } else {
+        //                 first_name = '',
+        //                 last_name = '';
+        //             }
+        //
+        //             if ( $button.length ) {
+        //                 $button.append('<span class="loading fa fa-refresh"></span>');
+        //
+        //             }else if ( $input ) {
+        //                 $input.after('<span class="loading fa fa-refresh"></span>');
+        //
+        //             }
+        //
+        //             $.ajax({
+        //                 url: 'process-form-mailchimp.php',
+        //                 data: 'ajax=true&email=' + escape(email) + '&fname=' + first_name +'&lname=' + last_name,
+        //
+        //                 success: function(msg) {
+        //                     $form.find('.loading').remove();
+        //
+        //                     if ( msg.indexOf('Success') !=-1 ) {
+        //                         $responseBlock.html('<span class="success-message">Success! You are now subscribed to our newsletter!</span>');
+        //                     } else {
+        //                         $responseBlock.html('<span class="error-message">' + msg + '</span>');
+        //                     }
+        //                 }
+        //             });
+        //         });
+        //     });
+        // }
     },
+
+    */
 
     // Google map
     initGoogleMap: function() {
@@ -1193,7 +1197,7 @@ Ventcamp = {
 
         if ( this.options.smoothScroll ) this.smoothScrollInit();
 
-        if ( this.options.ajaxedForm ) this.formInit();
+        // if ( this.options.ajaxedForm ) this.formInit();
 
         if ( this.options.pseudoSelect ) this.initPseudoSelect();
 
