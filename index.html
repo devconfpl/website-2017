@@ -4,16 +4,18 @@
 	<meta charset="utf-8">
 	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-	<title>Home</title>
+	<title>DevConf 2017</title>
 
-	<meta name="description" content="PSD to HTML5+CSS3 conversion.">
-	<meta name="keywords" content="PSD, HTML5, CSS3">
-	<meta name="author" content="Vivaco">
+	<meta name="description" content="DevConf 2017 website">
+	<meta name="keywords" content="devconf, software, developers, conference">
+	<meta name="author" content="DevConf">
 
 	<link rel="shortcut icon" href="assets/img/favicon.ico">
-	<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.jpg">
-	<link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.jpg">
-	<link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.jpg">
+	<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.png">
+	<link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16">
 
 	<link rel="stylesheet" type="text/css" href="assets/css/custom-animations.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
@@ -22,6 +24,29 @@
 		<script src="assets/js/html5shiv.js"></script>
 		<script src="assets/js/respond.min.js"></script>
 	<![endif]-->
+
+	<style>
+		.overlay.overlay-clr[class*="bg"]::before {
+				background-image: url('assets/img/backgrounds/bg-overlay.png');
+				background-color: rgba(0, 0, 0, 0.4);
+				background-repeat: repeat;
+				background-size: 2px 2px;
+				background-position: top left;
+		}
+
+		.overlay .heading-alt .fa {
+				color: #4ecdc4;
+		}
+
+		.extra-heading > img {
+				width: 60%;
+				margin-top: 20px;
+		}
+
+		#navigation {
+			margin-left: 15px;
+		}
+	</style>
 </head>
 
 <body>
@@ -29,23 +54,22 @@
 		<div class="preloader"></div>
 	</div>
 
-	<section id="hero" class="hero-section bg1 bg-cover window-height light-text">
+	<section id="hero" class="hero-section bg1 bg-cover window-height light-text overlay overlay-clr">
 		<ul class="socials-nav">
-			<li class="socials-nav-item"><a href="#"><span class="fa fa-twitter"></span></a></li>
-			<li class="socials-nav-item"><a href="#"><span class="fa fa-facebook"></span></a></li>
-			<li class="socials-nav-item"><a href="#"><span class="fa fa-github"></span></a></li>
-			<li class="socials-nav-item"><a href="#"><span class="fa fa-vimeo-square"></span></a></li>
-			<li class="socials-nav-item"><a href="#"><span class="fa fa-google-plus"></span></a></li>
-			<li class="socials-nav-item"><a href="#"><span class="fa fa-instagram"></span></a></li>
+			<li class="socials-nav-item"><a href="https://twitter.com/devconfpl"><span class="fa fa-twitter"></span></a></li>
+			<li class="socials-nav-item"><a href="https://www.facebook.com/devconfpl"><span class="fa fa-facebook"></span></a></li>
 		</ul>
 		<div class="heading-block centered-block align-center">
 			<div class="container">
-				<h5 class="heading-alt" style="margin-bottom: 8px;"><span class="fa fa-calendar-o base-clr-txt"></span>28.nov <span class="fa fa-map-marker base-clr-txt" style="margin-left: 14px;"></span>New York, NY</h5>
-				<h1 class="extra-heading">Ventcamp</h1>
-				<h6 class="thin base-font">Massive conference about <strong>web developement</strong></h6>
+				<h5 class="heading-alt" style="margin-bottom: 8px;"><span class="fa fa-calendar-o base-clr-txt"></span>13-15 oct 2017 <span class="fa fa-map-marker base-clr-txt" style="margin-left: 14px;"></span>Kraków, Poland</h5>
+				<h1 class="extra-heading">
+					<img src="assets/img/logo.png" alt="DevConf logo" />
+				</h1>
+				<h6 class="thin base-font">Conference for Professional <strong>Software Developers</strong></h6>
 				<div class="btns-container">
-					<a href="#" class="btn btn-md" data-modal-link="email-ticket">GET TICKETS</a>
-					<a href="#" class="btn btn-outline btn-md" data-modal-link="0">VIDEO</a>
+					<a href="#" class="btn btn-md">GET TICKETS</a>
+					<!-- <a href="#" class="btn btn-md" data-modal-link="email-ticket">GET TICKETS</a> -->
+					<!-- <a href="#" class="btn btn-outline btn-md" data-modal-link="0"></a> -->
 				</div>
 			</div>
 		</div>
@@ -56,8 +80,8 @@
 			<div class="container">
 				<div class="col-sm-2 col-xs-12 navigation-header">
 					<a href="#" class="logo">
-						<img src="assets/img/ventcamp_logo.png" alt="VentCamp" width="119" height="17" class="retina-hide">
-						<img src="assets/img/ventcamp_logo@2x.png" alt="VentCamp" width="119" height="17" class="retina-show">
+						<img src="assets/img/logo_small.png" alt="DevConf" width="211" height="17" class="retina-hide">
+						<img src="assets/img/logo_small@2x.png" alt="DevConf" width="211" height="17" class="retina-show">
 					</a>
 					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
 						<span class="icon-bar"></span>
@@ -72,7 +96,7 @@
 							<li class="navigation-item"><a href="#speakers" class="navigation-link">Speakers</a></li>
 							<li class="navigation-item"><a href="#schedule" class="navigation-link">Schedule</a></li>
 							<li class="navigation-item"><a href="#prices" class="navigation-link">Prices</a></li>
-							<li class="navigation-item"><a href="#gallery" class="navigation-link">Gallery</a></li>
+							<!-- <li class="navigation-item"><a href="#gallery" class="navigation-link">Gallery</a></li> -->
 							<li class="navigation-item"><a href="#sponsors" class="navigation-link">Sponsors</a></li>
 							<li class="navigation-item"><a href="#contacts" class="navigation-link">Contacts</a></li>
 								<li class="navigation-item dropdown">
@@ -108,8 +132,8 @@
 	<section id="about" class="section align-center">
 		<div class="container">
 			<span class="icon section-icon icon-multimedia-12"></span>
-			<h3>Business meets Innovation</h3>
-			<p class="text-alt">Starting your own IT business and picking right niche in less then <span class="highlight">30 days</span></p>
+			<h3>Meet the Community and Find Inspiration</h3>
+			<p class="text-alt">Two days of focused opportunities for <span class="highlight">learning</span> and <span class="highlight">networking</span>.</p>
 			<br />
 			<br />
 
@@ -129,49 +153,42 @@
 				<div class="tab-content">
 					<div id="horizontal_tab1" class="tab-pane fade active in">
 						<div class="col-sm-5 img-column">
-							<img src="assets/img/imac-371x412.png" alt="" class="img-responsive" />
+							<img src="assets/img/conference-371x412.png" alt="conference image" class="img-responsive" />
 						</div>
 						<div class="col-sm-7 align-left">
-							<h6>About event</h6>
-							<p>Faucibus sed pretium. Ridiculus <strong>consectetuer</strong> et. In arcu enim sit in libero scelerisque mauris sed. Nullam eleifend in varius arcu vitae feugiat magna id ut morbi consectetuer. In vivamus arcu. Id ut dui. Sed massa in. Scelerisque suscipit quisque maecenas aliquet in. Wisi mi ipsum. Elit et mauris. Duis in magni praesent <a href="#">content</a> massa.</p>
-							<p>Consectetuer amet wisi felis sem <strong>tincidunt</strong>. Ultricies blandit id euismod inceptos mauris pulvinar nec nullam quisque consequat nulla eleifend elementum vivamus aliquam placerat nec. Vehicula leo praesent vitae leo mauris ullamcorper lectus sed mollis id turpis dui cras suspendisse. Porta diam <a href="#">eleifend</a>. Praesent magnis sit. Enim ligula vel justo urna.</p>
+							<h6>About the event</h6>
+							<p>DevConf is one of Poland's premier annual conferences dedicated to software development. It's based on principles we believe are the success factors of an ultimate conference experience:</p>
 							<ul>
-								<li>Nisl cras vitae wisi odio amet.</li>
-								<li>Lacus amet vestibulum belas</li>
-								<li>Quis nunc curabitur assumenda</li>
+								<li><span class="highlight">inspiration</span> - regardless of technology, achieved by exchanging ideas</li>
+								<li><span class="highlight">learning</span> - as a process occuring at talks but also during informal conversations</li>
+								<li><span class="highlight">focus on people and interactions</span> - conference is about excellent sessions <strong>and</strong> great networking opportunities, we're eager to provide both</li>
 							</ul>
+
+							<p>If you are looking for a technology agnostic software development conference with high-level inspirational talks, deep dives into certain subjects, live coding sessions and plenty of networking time, make sure to book <span class="highlight">14-15th of September 2017</span> and come to <span class="highlight">Kraków, Poland</span>.</p>
 						</div>
 					</div>
 
 					<div id="horizontal_tab2" class="tab-pane fade">
 						<div class="col-sm-7 align-right">
 							<h6>Workshops</h6>
-							<p>Faucibus sed pretium. Ridiculus <strong>consectetuer</strong> et. In arcu enim sit in libero scelerisque mauris sed. Nullam eleifend in varius arcu vitae feugiat magna id ut morbi consectetuer. In vivamus arcu. Id ut dui. Sed massa in. Scelerisque suscipit quisque maecenas aliquet in. Wisi mi ipsum. Elit et mauris. Duis in magni praesent <a href="#">content</a> massa.</p>
-							<p>Consectetuer amet wisi felis sem <strong>tincidunt</strong>. Ultricies blandit id euismod inceptos mauris pulvinar nec nullam quisque consequat nulla eleifend elementum vivamus aliquam placerat nec. Vehicula leo praesent vitae leo mauris ullamcorper lectus sed mollis id turpis dui cras suspendisse. Porta diam <a href="#">eleifend</a>. Praesent magnis sit. Enim ligula vel justo urna.</p>
-							<ul>
-								<li>Nisl cras vitae wisi odio amet.</li>
-								<li>Lacus amet vestibulum belas</li>
-								<li>Quis nunc curabitur assumenda</li>
-							</ul>
+							<p>Based on our experience from previous years, we do know that some of you look for more practical knowledge sharing sessions. Our pre-conference workshops are designed to deliver exactly that.</p>
+							<p>On a day preceding the conference (13 September 2017) we're setting up full day workshops, so that some of you will be able to join and get their hands dirty with real things.</p>
+							<p>Follow us to see what topics we are going to cover during this year's workshops.</p>
 						</div>
 
 						<div class="col-sm-5 img-column">
-							<img src="assets/img/imac-371x412.png" alt="" class="img-responsive" />
+							<img src="assets/img/workshops-371x412.png" alt="workshops image" class="img-responsive" />
 						</div>
 					</div>
 
 					<div id="horizontal_tab3" class="tab-pane fade">
 						<div class="col-sm-5 img-column">
-							<img src="assets/img/imac-371x412.png" alt="" class="img-responsive" />
+							<img src="assets/img/sponsors-371x412.png" alt="sponsors image" class="img-responsive" />
 						</div>
 						<div class="col-sm-7 align-left">
 							<h6>Sponsors apply</h6>
-							<p>Faucibus sed pretium. Ridiculus <strong>consectetuer</strong> et. In arcu enim sit in libero scelerisque mauris sed. Nullam eleifend in varius arcu vitae feugiat magna id ut morbi consectetuer. In vivamus arcu. Id ut dui. Sed massa in. Scelerisque suscipit quisque maecenas aliquet in. Wisi mi ipsum. Elit et mauris. Duis in magni praesent <a href="#">content</a> massa.</p>
-							<ul>
-								<li>Nisl cras vitae wisi odio amet.</li>
-								<li>Lacus amet vestibulum belas</li>
-								<li>Quis nunc curabitur assumenda</li>
-							</ul>
+							<p>DevConf 2017 wouldn't be possible without our generous sponsors. If you would like to put your company in front of 600 software developers from Poland and the region it's a great opportunity. <a href="mailto:contact@devconf.pl">Let's talk</a> and see how can we support each other.</p>
+							<p>Be part of a great community that is full of open-minded and smart people from our industry!</p>
 						</div>
 					</div>
 				</div>
@@ -179,7 +196,7 @@
 		</div>
 	</section>
 
-	<section id="counters" class="section align-center overlay bg-cover bg5 light-text">
+	<section id="counters" class="section align-center overlay overlay-clr bg-cover bg5 light-text">
 		<div class="container">
 
 			<div class="row counters-wrapper">
@@ -187,7 +204,7 @@
 					<div class="counter-block counter-block-no-border">
 						<div class="counter-box">
 							<div class="counter-content">
-								<span class="count" data-from="0" data-to="136">0</span>
+								<span class="count" data-from="0" data-to="30">0</span>
 
 								<p class="title">speakers</p>
 							</div>
@@ -199,7 +216,7 @@
 					<div class="counter-block counter-block-no-border">
 						<div class="counter-box">
 							<div class="counter-content">
-								<span class="count" data-from="0" data-to="5">0</span>
+								<span class="count" data-from="0" data-to="3">0</span>
 
 								<p class="title">days</p>
 							</div>
@@ -211,7 +228,7 @@
 					<div class="counter-block counter-block-no-border">
 						<div class="counter-box">
 							<div class="counter-content">
-								<span class="count" data-from="0" data-to="25">0</span>
+								<span class="count" data-from="0" data-to="3">0</span>
 
 								<p class="title">workshops</p>
 							</div>
@@ -223,7 +240,7 @@
 					<div class="counter-block counter-block-no-border">
 						<div class="counter-box">
 							<div class="counter-content">
-								<span class="count" data-from="0" data-to="200">0</span>
+								<span class="count" data-from="0" data-to="36">0</span>
 
 								<p class="title">speeches</p>
 							</div>
